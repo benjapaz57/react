@@ -1,10 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './CartWidget';
+import CartWidget from './CartWidget';
 
 const Navbar = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-secondary bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">SDE-Wallets</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,6 +25,7 @@ const Navbar = () => {
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contacto</a>
                             </li>
+                            <CartWidget />
                         </ul>
                     </div>
                 </div>
