@@ -1,7 +1,8 @@
+import itemCount from "./ItemCount"
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
     return (
-        <label>{greeting}</label>
+        <itemCount />
     )
 }
 
