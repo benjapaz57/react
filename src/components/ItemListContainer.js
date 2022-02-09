@@ -1,8 +1,8 @@
-import itemCount from "./ItemCount"
+import ItemCount from "./ItemCount"
 
 const ItemListContainer = () => {
     return (
-        <itemCount />
+        <ItemCount stock = { 5 } initialValue = { 1 } />
     )
 }
 
