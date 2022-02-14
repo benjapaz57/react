@@ -1,22 +1,26 @@
-import item from './Item'
+import Item from "./Item";
 
-let isOk = true;
-let data = item;
+/* const ItemList = (props) => {
+    const age = props.age;
+    const name = props.name;
+    const products = props.products */
 
-const itemList = (timeout, data) => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (isOk) {
-                resolve(data);
-            } else {
-                reject(alert('no se pudo mostrar el inventario.'))
-            }
-        }, timeout);
-    });
+/* const ItemList = (props) => {
+        const { age, name, products } = props; */
+
+const ItemList = ({ products }) => {
+  // products es un array de objetos [{obj1}, {obj2}, ..., {objN}]
+  // quiero renderizar un Item por cada objeto
+  console.log("estoy en ItemList y los products son ", products);
+  return (
+    <>
+      {products.map((product) => (
+          <div key={product.id}>
+              <Item product={product} />
+          </div>
+      ))}
+    </>
+  );
 };
 
-itemList(2000, data)
-.then((data) => console.log('accept'))
-.catch((error) => console.log('error'))
-
-export default itemList;
+export default ItemList;
