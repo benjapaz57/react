@@ -3,6 +3,11 @@ import './CartWidget';
 import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 
+
+
+///////AQUI ME FALTO LINKEAR CATEGORY:ID//////////
+
+///////TAMBIEN ME FALTO LA PARTE DE CATEGORIAS////
 const Navbar = () => {
     return (
         <div>
