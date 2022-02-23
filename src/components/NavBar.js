@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 ///////AQUI ME FALTO LINKEAR CATEGORY:ID//////////
-
+///////HOOK USE:PARAMS ///////////////////////////
 ///////TAMBIEN ME FALTO LA PARTE DE CATEGORIAS////
 const Navbar = () => {
     return (
@@ -20,13 +20,13 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <Link to='/category/'>Productos</Link>
+                                <Link to='/category/'>Nacionales</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to='/category/'>Formas de Pago</Link>
+                                <Link to='/category/'>Internacionales</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to='/category/'>Contacto</Link>
+                                <Link to='/category/'>Otras</Link>
                             </li>
                             <CartWidget />
                         </ul>
